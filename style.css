@@ -1,0 +1,96 @@
+/* Global Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Body & General */
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #121212;
+    color: #f0f0f0;
+    padding: 20px;
+    min-height: 100vh;
+  }
+  
+  /* Heading */
+  h1 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 30px;
+    color: #ffffff;
+  }
+  
+  /* Search Box */
+  .search-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 30px;
+  }
+  
+  .search-box input {
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #333;
+    background-color: #1e1e1e;
+    color: #f0f0f0;
+    width: 200px;
+  }
+  
+  .search-box input::placeholder {
+    color: #888;
+  }
+  
+  .search-box button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #333;
+    color: #f0f0f0;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+  }
+  
+  .search-box button:hover {
+    background-color: #444;
+  }
+  
+  /* Results Grid */
+  #results {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+  }
+  
+  /* Card Styles */
+  .card {
+    background-color: #1e1e1e;
+    border-radius: 12px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    text-align: center;
+    padding: 10px;
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.7);
+  }
+  
+  .card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+  }
+  
+  .card h3 {
+    font-size: 1.1rem;
+    color: #f0f0f0;
+    margin: 0;
+  }
+  
